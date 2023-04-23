@@ -1,0 +1,602 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* This is the section for code resusing */
+
+.header,
+.projects,
+.internship {
+  /* background: orange; */
+}
+
+#about,
+.academic,
+footer {
+  /* background-color: orange; */
+  color: purple;
+  text-shadow: 1px 1px black;
+  /* background: linear-gradient(lightskyblue, white); */
+}
+
+.header-options,
+.project-card-skills,
+.internship-card-skills,
+.skills,
+.contacts {
+  display: flex;
+  border: 1px solid purple;
+}
+.academic-cards,
+.projects-card {
+  display: flex;
+}
+.internship,
+.internship-cards {
+  display: flex;
+}
+#about {
+  display: flex;
+}
+.header-menu {
+  display: flex;
+}
+.header-menu,
+.projects-card,
+.project-card-skills,
+.internship-cards,
+.internship-card-skills,
+.academic-cards,
+.skills,
+.contacts {
+  justify-content: space-around;
+}
+
+header {
+  padding: 2px;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-img {
+  height: 90px;
+  width: 150px;
+  margin-right: auto;
+}
+
+.header-options {
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 0;
+}
+
+.header-menu {
+  list-style: none;
+  align-items: center;
+  margin: 10px auto;
+  margin-right: 10px;
+}
+
+.header-menu-text {
+  font-weight: bold;
+  text-shadow: 1px 1px orange;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 5px;
+  width: 140px;
+  text-align: center;
+  padding: 5px;
+  font-size: 2rem;
+  margin-right: 35px;
+}
+
+.header-menu-text a {
+  text-decoration: none;
+  color: purple;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Adding Responsiveness to the header */
+@media screen and (max-width: 1050px) {
+  header {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header-options {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-menu-text {
+    margin: 5px auto;
+    width: 160px;
+    text-align: center;
+    margin-right: 35px;
+  }
+
+  #logo-img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* main Section starts here */
+
+@media screen and (max-width: 1050px) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+  }
+}
+
+.about-intro {
+  text-align: center;
+  border-bottom: 5px solid purple;
+  width: 100px;
+  margin: 5px auto;
+  color: purple;
+}
+
+/* About Section */
+
+#about {
+  margin: 20px 50px;
+}
+
+#about-img {
+  height: 400px;
+  width: auto;
+  border-radius: 10%;
+  border-bottom: 10px solid purple;
+}
+
+.about-text {
+  border-radius: 5%;
+  margin: 20px;
+  font-size: 1.5rem;
+  padding: 20px;
+  text-align: justify;
+}
+
+#about-name {
+  color: purple;
+  font-weight: bold;
+}
+
+.about-tech {
+  display: inline;
+  color: purple;
+}
+
+.about-tech-cs {
+  display: inline;
+  color: purple;
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-shadow: 1px 1px 0 purple;
+}
+
+#about {
+  padding: 20px;
+  /* border: 1px solid purple; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsiveness in about section */
+
+@media screen and (max-width: 1050px) {
+  #about {
+    flex-direction: column;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* About Section Ends */
+
+/* Project Section */
+
+.projects {
+  height: auto;
+}
+
+#project-intro {
+  text-align: center;
+  border-bottom: 5px solid orange;
+  width: 100px;
+  margin: 5px auto;
+  color: purple;
+}
+
+.projects-card {
+  margin: 10px;
+  margin-left: auto;
+}
+
+.project-card {
+  margin: 10px;
+  border: 2px solid purple;
+  border-radius: 2%;
+  width: 500px;
+}
+
+.project-card-title {
+  font-size: 1.5rem;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  color: purple;
+}
+
+.project-card-skills {
+  border: 1px solid red;
+  margin: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+.project-card-description {
+  margin: 5px;
+  padding: 5px;
+  text-align: justify;
+  font-size: 1.3rem;
+  color: purple;
+}
+
+.project-card-skills-card {
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid brown;
+  color: purple;
+  background-color: orange;
+  font-size: 1.2rem;
+}
+
+/* Responsiveness for Project Section */
+@media screen and (max-width: 1050px) {
+  .projects-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .projects-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 300px;
+  }
+
+  .project-card-description {
+    display: none;
+  }
+
+  .project-card-skills {
+    flex-direction: column;
+  }
+}
+
+/* Internship */
+.internship {
+  height: auto;
+  flex-direction: column;
+}
+
+#internship-intro {
+  text-align: center;
+  border-bottom: 5px solid purple;
+  width: 100px;
+  margin: 5px auto;
+  color: purple;
+}
+
+.internship-cards {
+  width: auto;
+  margin: 10px;
+}
+
+.internship-card {
+  border: 1px solid purple;
+  border-radius: 2%;
+  margin: 10px;
+  width: 400px;
+}
+
+.internship-card-company {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  color: purple;
+}
+
+.internship-card-title {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  color: purple;
+}
+
+.internship-card-skills {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  color: purple;
+}
+
+.internship-card-duration {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid black;
+  color: purple;
+}
+
+.internship-card-description {
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  color: purple;
+  text-align: justify;
+}
+
+.internship-card-skill {
+  margin: 2px;
+  padding: 2px;
+  border: 1px solid brown;
+  color: purple;
+  font-size: 1.2rem;
+}
+
+.internship-card:hover {
+  width: 480px;
+}
+
+/* Responsiveness for internship part */
+@media screen and (max-width: 1050px) {
+  .internship {
+    width: auto;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .internship-cards {
+    flex-direction: column;
+    height: auto;
+    width: 480px;
+    margin: 0;
+  }
+
+  .internship-card-description {
+    display: none;
+  }
+
+  .internship-card {
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .internship-card-company {
+    font-size: 1rem;
+    margin: 0;
+    /* width: 200px; */
+  }
+
+  .internship-card-title {
+    font-size: 1rem;
+    margin: 0;
+
+    /* width: 200px; */
+  }
+
+  .internship-card-duration {
+    font-size: 1rem;
+    margin: 0;
+
+    /* width: 200px; */
+  }
+
+  .internship-card-skills {
+    flex-direction: column;
+    font-size: 0.9rem;
+    margin: 0;
+
+    /* width: 200px; */
+  }
+}
+
+/* Academics */
+.academic {
+  height: auto;
+}
+
+#academic-intro {
+  text-align: center;
+  border-bottom: 5px solid purple;
+  width: 150px;
+  margin: 5px auto;
+  color: purple;
+}
+
+.academic-cards {
+  width: auto;
+  margin: 10px;
+}
+
+.academic-card {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 400px;
+  height: auto;
+  border: 1px solid purple;
+  border-radius: 2%;
+}
+
+.academic-card-year {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid orange;
+  color: purple;
+}
+
+.academic-card-school {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid purple;
+  color: purple;
+}
+
+.academic-card-course {
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid purple;
+  color: purple;
+}
+
+.academic-card:hover {
+  font-size: 1.7rem;
+  text-align: center;
+  width: 480px;
+  height: auto;
+  border: 1px solid purple;
+  border-radius: 2%;
+}
+
+/* Responsiveness in academic section */
+@media screen and (max-width: 1050px) {
+  .academic-cards {
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+  }
+
+  .academic-card {
+    margin: 20px;
+    width: 300px;
+  }
+}
+
+/* Skill Section */
+
+.skills {
+  height: auto;
+  margin-top: 20px;
+  background-color: orange;
+}
+
+.skill {
+  margin: 20px;
+  padding: 5px;
+  border: 1px solid green;
+  border-radius: 10%;
+  width: auto;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Responsiveness in Skill Section */
+@media screen and (max-width: 1050px) {
+  .skills {
+    flex-direction: column;
+    margin: 5px;
+    align-items: center;
+  }
+
+  .skill {
+    width: 120px;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+  }
+}
+
+/* Footer Section of the Wwb Page */
+footer {
+  margin-top: 20px;
+  height: auto;
+  border: 1px solid white;
+}
+
+.footer-text {
+  margin: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.contact-type {
+  text-align: center;
+  width: 200px;
+  margin: 10px;
+}
+
+.contact-type-icon {
+  margin: 10px;
+}
+
+.contact-type-detail {
+  margin: 10px;
+}
+
+.material-symbols-outlined {
+  margin: 10px;
+}
+
+/* Responsiveness in footer */
+@media screen and (max-width: 1050px) {
+  body {
+    width: auto;
+    margin: 0;
+  }
+
+  footer {
+    width: 480px;
+    margin: 2px auto;
+  }
+
+  .footer-text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
