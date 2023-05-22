@@ -87,20 +87,20 @@ header {
 
 .header-menu-text {
   font-weight: bold;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px orange;
+  border-radius: 10px;
   border: 1px solid black;
   margin: 5px;
-  width: 120px;
+  width: 155px;
   text-align: center;
   padding: 5px;
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-right: 35px;
 }
-
 .header-menu-text a {
   text-decoration: none;
   color: purple;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-left: auto;
   margin-right: auto;
 }
