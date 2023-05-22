@@ -28,7 +28,7 @@ header,
 #about,
 .academic,
 footer {
-  background-color: orange;
+  background-color: none;
   color: purple;
   text-shadow: 1px 1px black;
   /* background: linear-gradient(lightskyblue, white); */
