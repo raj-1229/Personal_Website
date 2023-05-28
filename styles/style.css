@@ -328,7 +328,7 @@ header {
   border: 1px solid purple;
   border-radius: 2%;
   margin: 10px;
-  width: 400px;
+  width: 450px;
 }
 
 .internship-card-company {
@@ -364,6 +364,7 @@ header {
 }
 
 .internship-card-description {
+  font-size: large;
   margin: 5px;
   padding: 5px;
   text-align: center;

@@ -203,6 +203,13 @@ img {
 #sm {
   width: 600px;
 }
+#fd {
+  width: 600px;
+}
+#fdd {
+  width: 400px;
+  height: 600px;
+}
 
 .project__introduction {
   margin: 10px;
